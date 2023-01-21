@@ -3,120 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Oishe</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./CSS/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="left">
 
-        <div class="profile image">
-          <img src="./img/photo_2022-12-22_17-35-02.jpg" alt="Nurat Jahan" />
-          <h2>Nusrat Jahan</h2>
-          <h3>Software Engineer</h3>
-        </div>
-        <br>
-        <h2>Contact</h2>
+    <!--Favicon-->
+    <!--<link rel="icon" type="image/png" href="img/img1.png">
 
-        <div class="contact">
-          <ul>
-            <li><i class="fa fa-phone" aria-hidden="true"></i> 01761631487</li>
-            <li>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              nusratoisthe345@gmail.com
+    <!--Bootstrap 5 cdn Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custos File's Link-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+   
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="7s">
+
+  <!--Navbar-->
+
+  <header class="header-wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          Navbar
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!--<span class="navbar-toggler-icon"></span>-->
+          <i class="far fa-stream navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
-            <li>
-              <i class="fa fa-github" aria-hidden="true"></i
-              ><a href="https://github.com/NUSRAT345"> NUSRAT345</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="main-btn" href="#contact">Hire me</a>
             </li>
           </ul>
         </div>
-
-        <br>
-
-        <div class="education">
-          <h2>Education</h2>
-          2019 - PRESENT  <br />
-          B.Sc in Computer Science and Engineering <br />University of Rajshahi,
-          Rajshahi, Bangladesh.
-          <br>
-          <br>2016 - 2019
-          <br>
-          Higher Secondary School certificate <br />
-          Muminunnisa Govt. Womens' College, Mymensingh, Bangladesh
-        </div>
-
       </div>
-    <div class="right">
-        <div class="profile">
-          <h2>Profile</h2>
-          I am a highly competent IT professional with a proven track record in
-          designing websites, networking and managing databases. I have strong
-          technical skills as well as excellent interpersonal skills, enabling
-          me to interact with a wide range of clients. I am eager to be
-          challenged in order to grow and further improve my IT skills. My
-          greatest passion is in life is using my technical know-how to benefit
-          other people and organisations
-        </div>
+    </nav>
+  </header>
 
-        <br>
-        <div class="workExperience">
-          <h2>Work Experience</h2>
-          2021-CONTINUE CODING WITH JAVA I have two years of Experience with
-          coding in Java. I have made some project on android application
-          development using java which are stored in github. Now my learning
-          phage is going on.
-          <ul>
-            <li>Developed web interface using jSP</li>
-            <li>Contributed to team meetings.</li>
-            <li>Provided status updates on development tasks.</li>
-            <li>Performed debug and performance analysis</li>
-          </ul>
-          <br />
-          2020-CONTINUE <br />
-          <h4>CODING WITH C++</h4>
-          I have been coding with C++ since I joined my university. I am doing
-          competitive programming where C++ is mostly used. I have learned
-          implementation of different data structure and algorithm using C++
-        </div>
+  <!--Navbar selection Exit-->
 
-        <br>
-        <div class="language">
-            <h2>Language</h2>
-            <ul>
-                <li>Bangla.</li>
-                <li>English.</li>
-                <li>Hindi.</li>
-            </ul>
+  <!--Banner selection-->
+  <section id="home" class="banner_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center text-md-start">
+          <h6>Welcome to my website</h6>
+          <h1> I am Nusrat Jahan <br><span>Computer Engineer</span></h1>
+          <div class="mt-4">
+            <a class="main-btn" href="">Download CV</a>
+          </div>
         </div>
-        <br>
-        <div class="skills">
-            <h2>Skills and Expertise</h2>
-            <ul>
-                <li>Coding.</li>
-                <li>Java.</li>
-                <li>C++.</li>
-                <li>C.</li>
-                <li>HTML5.</li>
+      </div>
+    </div>
+  </section>
+
+  <!--Banner selection Exit-->
+  
+  <!--About selection-->
+  <section id="about" class="about_wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <img src="img/photo_2022-12-22_17-35-02.jpg" class="img-fluid round-3" alt="About-us">
+        </div>
+        <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+          <div class="my-3 my-lg-0">
+            <span class="subtitle">My About Details</span>
+            <h2>About me</h2>
+            <p>I am a highly competent IT professional with a proven track record in
+              designing websites, networking and managing databases. I have strong
+              technical skills as well as excellent interpersonal skills, enabling
+              me to interact with a wide range of clients. I am eager to be
+              challenged in order to grow and further improve my IT skills. My
+              greatest passion is in life is using my technical know-how to benefit
+              other people and organisations</p>
+          </div>
+          <div class=" pt-4">
+            <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="true">Skill</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Education-tab" data-bs-toggle="pill" data-bs-target="#pills-Education" type="button" role="tab" aria-controls="pills-Education" aria-selected="false">Education</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Experience-tab" data-bs-toggle="pill" data-bs-target="#pills-Experience" type="button" role="tab" aria-controls="pills-Experience" aria-selected="false">Experience</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-hobbies-tab" data-bs-toggle="pill" data-bs-target="#pills-hobbies" type="button" role="tab" aria-controls="pills-hobbies" aria-selected="false">Hobbies</button>
+              </li>
+              
             </ul>
-            <div class="hobbies">
-                <h2>Hobbies and Interest</h2>
-                <ul>
-                    <li>Reading books.</li>
-                    <li>Gardening.</li>
-                    <li>Travelling.</li>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-Skill" role="tabpanel" aria-labelledby="pills-Skill-tab" tabindex="0">
+                <div class="single-progress">
+                  <h6>Designing</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 80%"></div>
+                  </div>
+                  <span class="level">80%</span>
+                </div>
+                <div class="single-progress">
+                  <h6>C++</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                  <span class="level">75%</span>
+                </div>
+                <div class="single-progress">
+                  <h6>Java</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 85%"></div>
+                  </div>
+                  <span class="level">85%</span>
+                </div>
+                <div class="single-progress">
+                  <h6>CSS</h6>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 65%"></div>
+                  </div>
+                  <span class="level">65%</span>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-Education" role="tabpanel" aria-labelledby="pills-Education-tab" tabindex="0">
+                <li><a href="#">2016 - 2018
+                  Higher Secondary School certificate <br />
+                  Muminunnisa Govt. Womens' College, Mymensingh, Bangladesh.</li>
+                <li><a href="#">2019 - Present<br>
+                BSc. in Computer Science and Engineering,<br>
+                University of Rajshahi.</a></li>
+              </div>
+              <div class="tab-pane fade" id="pills-Experience" role="tabpanel" aria-labelledby="pills-Experience-tab" tabindex="0">
+                <ul class="text-start ps-0">
+                  <li><a href="#">Experience of coding in C++ and Java.</a></li>
+                  <li><a href="#">Making many project with Java</a></li>
+                  <li> <a href="#">Making two game:<br>Newton's Apple.<br>Mysterious Treasure.</a></li>
                 </ul>
+              </div>
+              <div class="tab-pane fade" id="pills-hobbies" role="tabpanel" aria-labelledby="pills-hobbies-tab" tabindex="0">
+                <li><a href="#">Listening music</a> </li>
+                <li><a href="#">Reading books</a> </li>
+                <li><a href="#">Travelling</a></li>
+                <li><a href="#">Gardening</a></li>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
+
+  <!--About selection Exit-->
+
+  <!--Service selection-->
+  
+  
+
+  <!--Service selection Exit-->
+
+  <!--Portfolio selection-->
+
+  <!--Portfolio selection Exit-->
+
+  <!--Contact selection-->
+  <section id="contact" class="contact_wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+              <!-- <span class="subtitle">My complete project</span> -->
+              <h2>Contact.</h2>
+              <div class="row call_details mb-4">
+                  <label class="col-sm-3 col-lg-4">Call me Directly :</label>
+                  <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                      <a href="javascript:void(0)">+8801761631487</a>
+                  </div>
+
+                  <label class="col-sm-3 col-lg-4">Contact Email :</label>
+                  <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                      <a href="#">nusratoishe345@gmail.com</a>
+                  </div>
+              </div>
+              <form>
+                  <div class="mb-4">
+                      <input type="text" class="form-control" placeholder="Your Name..." autocomplete="off">
+                  </div>
+                  <div class="mb-4">
+                      <input type="number" class="form-control" placeholder="Your Mobile..." autocomplete="off">
+                  </div>
+                  <div class="mb-4">
+                      <input type="email" class="form-control" placeholder="Your Email..." autocomplete="off">
+                  </div>
+                  <div class="mb-4">
+                      <textarea cols="40" rows="10" class="form-control" id="message" placeholder="Write a message..." autocomplete="off"></textarea>
+                  </div>
+                  <button type="submit" class="main-btn">Submit</button>
+              </form>
+          </div>
+          <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
+              <img src="./img/contact-us-1908762__340.webp" class="img-fluid" alt="">
+          </div>
+      </div>
     </div>
-  </body>
+  </section>
+  <!--Contact selection Exit-->
+
+
+
+  <!--Bootsrap 5 JS CDN Links-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"> </script>
+
+  <!--Custom JS link-->
+  <script src="js/main.js"> </script>
+
+</body>
+ 
 </html>
